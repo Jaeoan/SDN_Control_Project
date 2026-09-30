@@ -1,0 +1,7 @@
+# SDN 컨트롤러가 읽는 설정값. 회차가 끝나면 advisor.py 가 고쳐 쓴다.
+threshold: 90        # 우회 시작 기준(%). 기본 경로 사용률이 이 값 이상이면 우회 전환을 시작한다
+split_ratio: 20      # 우회 비율(%). 기기 10대 중 이 비율만큼(h1 부터)의 트래픽을 우회 경로로 보낸다
+auto: true           # false 면 자동으로 우회하지 않는다 (manual_detour.sh 로 수동 전환)
+limits:              # 이 범위를 벗어난 제안은 버린다
+  threshold: [50, 95]
+  split_ratio: [0, 100]

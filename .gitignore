@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+venv/
+# 실험 기록, 보고서, 작업 메모는 저장소에 올리지 않는다 (코드만 올린다)
+runs/
+results/
+report/
+CHANGES.md
+# gns3_build.py create 가 만드는 환경별 파일 (GNS3 프로젝트 id)
+gns3_project.json
